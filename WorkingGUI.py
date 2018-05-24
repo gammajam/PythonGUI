@@ -4,7 +4,7 @@ window = Tk()
 
 window.title("First Python GUI")
 
-window.geometry('550x400')
+window.geometry('750x550')
 
 #Create a label widget
 #To add a label to our previous example, we will create a label using the label class like this:
@@ -15,7 +15,7 @@ lbl.grid(column=0, row=0)
 
 #You can create a textbox using Tkinter Entry class like this:
 
-txt = Entry(window,width=10)   
+txt = Entry(window,width=50)   
 
 txt.grid(column=1, row=0)
 
