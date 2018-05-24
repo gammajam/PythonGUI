@@ -8,7 +8,7 @@ window.geometry('550x400')
 
 #Create a label widget
 #To add a label to our previous example, we will create a label using the label class like this:
-lbl = Label(window, text="Hello", font=("Arial Bold", 50))
+lbl = Label(window, text="Enter Words Here:", font=("monospace", 16))
 
 #Then we will set its position on the form using the grid function and give it the location like this:
 lbl.grid(column=0, row=0)
