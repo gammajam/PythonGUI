@@ -14,12 +14,11 @@ lbl = Label(window, text="Enter Words Here:", font=("monospace", 16))
 lbl.grid(column=0, row=0)
 
 #You can create a textbox using Tkinter Entry class like this:
-
 txt = Entry(window,width=50)   
 
 txt.grid(column=1, row=0)
 
- #set focus to text box txt.focus() but where to put ?
+#set focus to text box txt.focus() but where to put ?
 
 def clicked():
     
@@ -28,16 +27,10 @@ def clicked():
     words.sort()
     lbl.configure(text= "#" + " #".join(words))
 
-#You can change foreground for a button or any other widget using fg property.
-#Also, you can change the background color for any widget using bg property.
-#Let’s start by adding the button to the window, the button is created and added to the window the same as the label:
-#Handle button click event
-#First, we will write the function that we need to execute when the button is clicked:
 btn = Button(window, text="Click Me", bg="orange", fg="red", command=clicked)
  
 btn.grid(column=2, row=0) # Note that we place the button on the second column of the window which is 1.
 # If you forget and place the button on the same column which is 0, it will show the button only, since the button will
-# be on the top of the label.#You can change foreground for a button or any other widget using fg property.
-#Also, you can change the background color for any widget using bg property.
+# be on the top of the label.
 
 window.mainloop()
