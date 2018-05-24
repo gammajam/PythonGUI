@@ -26,7 +26,7 @@ def clicked():
     result = txt.get()
     words = result.split()
     words.sort()
-    lbl.configure(text= words)
+    lbl.configure(text= "#" + " #".join(words))
 
 #You can change foreground for a button or any other widget using fg property.
 #Also, you can change the background color for any widget using bg property.
